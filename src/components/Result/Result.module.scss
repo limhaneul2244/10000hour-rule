@@ -1,0 +1,13 @@
+@import '../../utill.scss';
+
+.myPlanResult{
+  margin-bottom: 115px;
+}
+.result {
+  @include flex(flex, center, center, null);
+  font-size: 20px;
+}
+.bold {
+  padding: 0 20px;
+  font-size: 70px;
+}

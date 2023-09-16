@@ -1,0 +1,53 @@
+@import '../../utill.scss';
+
+.section1 {
+  margin-bottom: 102px;
+}
+.main {
+  position: relative;
+}
+.mainImg {
+  @include size(564px, 112px);
+  @include position(absolute, 50%, null, null, 50%);
+  transform: translate(-50%, -50%);
+}
+.mainClock {
+  @include size(221px, 225px);
+}
+
+.mainTxt {
+  font-family: "OTEnjoystoriesBA";
+  color: #f5df4d;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 66px;
+  margin-bottom: 78px;
+}
+
+.mainContent {
+  position: relative;
+  max-width: 373px;
+  margin: auto;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.mainContent::before,
+.mainContent::after {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  @include size(37px, 32px);
+}
+
+.mainContent::before {
+  content: url($img-path + "quotes01.png");
+  left: -37px;
+}
+
+.mainContent::after {
+  content: url($img-path + "quotes02.png");
+  right: -37px;
+}

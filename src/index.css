@@ -1,0 +1,140 @@
+/* Gmarket sans */
+@font-face {
+  font-family: "GmarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* tvn */
+@font-face {
+  font-family: "OTEnjoystoriesBA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #5b2386;
+  font-family: "GmarketSans";
+  color: white;
+}
+.a11y {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+p,
+ul,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+}
+
+.wrapper {
+  padding-top: 50px;
+  text-align: center;
+  max-width: 765px;
+  margin: 0 auto;
+}
+
+.myPlan {
+  margin-bottom: 115px;
+
+  .detailPlan {
+    margin-bottom: 27px;
+    font-size: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.inner {
+  margin-bottom: 115px;
+}
+input {
+  width: 200px;
+  margin: 0 17px;
+  border-radius: 7px;
+  background: #fff;
+  border: none;
+  color: #333;
+  padding: 10px;
+  font-family: "GmarketSans";
+  font-size: 20px;
+  font-weight: 400;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: #babcbe;
+  }
+}
+
+/* 포인트버튼 */
+.pointBtn {
+  position: relative;
+  background-color: #fcee21;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+}
+/* 기본버튼 공통 */
+.btn {
+  cursor: pointer;
+  word-break: keep-all;
+  font-family: "GmarketSans";
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 40px;
+  font-size: 20px;
+  color: #5b2386;
+}
+
+.clickBtn {
+  position: relative;
+  background-color: #fcee21;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+}
+.clickBtn::after {
+  content: url(../public/imgs/icon_click.png);
+  display: inline-block;
+  position: absolute;
+  right: -64px;
+  top: 30%;
+  width: 64px;
+  height: 72px;
+}
+
+.loading {
+  width: 100px;
+  animation: rotateImg 1s linear infinite;transform-origin: 50% 50%;
+}
+
+@keyframes rotateImg {
+  100% {
+    transform: rotate(360deg);
+  }
+}

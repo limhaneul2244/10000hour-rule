@@ -1,0 +1,31 @@
+@import '../../utill.scss';
+
+.dimmed {
+  @include position(fixed, 0,0,0,0);
+  @include flex(flex, center, center, null);
+}
+.modal {
+  @include flex(flex, center, center, column);
+  text-align: center;
+  @include size(600px, 600px);
+  background-color: #fff;
+  border-radius: 20px;
+  color: #5b2386;
+  font-family: "OTEnjoystoriesBA";
+}
+
+.modalTop {
+  font-size: 80px;
+
+  & :last-child {
+    font-size: 30px;
+  }
+}
+
+.modalBody {
+  @include size(433px, 337px);
+  background-size: cover;
+  background-position: center;
+  background-image: url($img-path + "licat.png");
+  margin-bottom: 20px;
+}

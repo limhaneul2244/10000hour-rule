@@ -1,0 +1,21 @@
+$img-path: '../../../public/imgs/';
+
+@mixin size ($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin position($position, $top, $rgt, $btm, $lft) {
+  position: $position;
+  top: $top;
+  right: $rgt;
+  bottom: $btm;
+  left: $lft;
+}
+
+@mixin flex($flex, $jusify, $align, $direction) {
+  display: $flex;
+  justify-content: $jusify;
+  align-items: $align;
+  flex-direction: $direction;
+}
