@@ -20,7 +20,7 @@ function App() {
   const handleInputHours = (e) => {
     const inputNumValue = e.target.value;
     setInputHourValue(inputNumValue);
-    if (inputNumValue > 24) {
+    if (inputNumValue > 24 || inputNumValue <= 0) {
       alert('2자리 숫자로 24이하만 입력하세요.');
       setInputHourValue('');
       return;
@@ -93,7 +93,7 @@ function App() {
         </form>
         {
           isLoading &&
-          <img className='loading' src="imgs/loading.png" alt="loading이미지" />
+          <img className='loading' src={process.env.PUBLIC_URL + '/imgs/loading.png'} alt="loading이미지" />
         }
         {
           isShow &&

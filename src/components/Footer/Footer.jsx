@@ -4,7 +4,7 @@ import './Footer.module.scss';
 export default function Footer() {
   return (
     <footer>
-      <img src="imgs/logo.png" alt="" />
+      <img src={process.env.PUBLIC_URL + "/imgs/logo.png"} alt="" />
       <p>
         ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.
       </p>

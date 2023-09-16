@@ -12,10 +12,10 @@ export default function MainTitle() {
         <div className={css.main}>
           <img
             className={css.mainImg}
-            src="imgs/main_img.png"
+            src={process.env.PUBLIC_URL + "/imgs/main_img.png"}
             alt="1만시간의법칙"
           />
-          <img className={css.mainClock} src="imgs/clock.png" alt="시계" />
+          <img className={css.mainClock} src={process.env.PUBLIC_URL + "/imgs/clock.png"} alt="시계" />
         </div>
         <p className={css.mainTxt}>" 연습은 어제의 당신보다 당신을 더 낫게 만든다. "</p>
 
