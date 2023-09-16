@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/10000hour-rule/static/css/main.db799b3c.css",
+    "main.js": "/10000hour-rule/static/js/main.194bbb29.js",
+    "static/media/licat.png": "/10000hour-rule/static/media/licat.c7698aef373090059f1d.png",
+    "index.html": "/10000hour-rule/index.html",
+    "main.db799b3c.css.map": "/10000hour-rule/static/css/main.db799b3c.css.map",
+    "main.194bbb29.js.map": "/10000hour-rule/static/js/main.194bbb29.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db799b3c.css",
+    "static/js/main.194bbb29.js"
+  ]
+}
